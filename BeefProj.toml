@@ -1,0 +1,31 @@
+FileVersion = 1
+
+[Project]
+Name = "BeefCurl"
+TargetType = "BeefLib"
+StartupObject = "CURL.Program"
+DefaultNamespace = "CURL"
+
+[Configs.Debug.Win32]
+LibPaths = ["$(ProjectDir)/lib/x86/debug/libcurl-d.lib", "$(ProjectDir)/lib/x86/debug/zlibd.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/lib/x64/debug/libcurl-d.lib", "$(ProjectDir)/lib/x64/debug/zlibd.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Release.Win32]
+LibPaths = ["$(ProjectDir)/lib/x86/release/libcurl.lib", "$(ProjectDir)/lib/x86/release/zlib.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)/lib/x64/release/libcurl.lib", "$(ProjectDir)/lib/x64/release/zlib.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Paranoid.Win32]
+LibPaths = ["$(ProjectDir)/lib/x86/release/libcurl.lib", "$(ProjectDir)/lib/x86/release/zlib.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Paranoid.Win64]
+LibPaths = ["$(ProjectDir)/lib/x64/release/libcurl.lib", "$(ProjectDir)/lib/x64/release/zlib.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Test.Win32]
+LibPaths = ["$(ProjectDir)/lib/x86/debug/libcurl-d.lib", "$(ProjectDir)/lib/x86/debug/zlibd.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)/lib/x64/debug/libcurl-d.lib", "$(ProjectDir)/lib/x64/debug/zlibd.lib", "ws2_32.lib", "wldap32.lib", "advapi32.lib", "kernel32.lib", "comdlg32.lib", "crypt32.lib", "normaliz.lib"]
